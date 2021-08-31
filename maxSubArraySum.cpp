@@ -4,6 +4,7 @@
 using namespace std;
 class Solution {
 public:
+//kadan's algorithm
     int maxSubArray(vector<int>& nums) {
         int sum=0;
         int maxi=nums[0];
