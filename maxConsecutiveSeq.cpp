@@ -13,7 +13,7 @@ public:
             s.insert(nums[i]);
         }
         //check if one less than current number exists if yes move ahead(because we need least element in sequence)
-        //once you find least untill you not find next number keep increasing current and length
+        //once you find least,untill you not find next number keep increasing current and length
         //store maxLen
         for(int i=0;i<nums.size();i++)
         {
