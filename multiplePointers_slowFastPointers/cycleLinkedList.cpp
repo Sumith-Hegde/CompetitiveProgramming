@@ -14,6 +14,9 @@ public:
         if(head==NULL) return false;
         ListNode* slower=head;
         ListNode* faster=head;
+        //slow fast pointers
+        // TimeComplexity = O(n)
+        // SpaceComplexity = O(1)
         //floyd's algorithm - move one fast another slow eventually they'll meet if there is a cycle
         //to find the start of the cycle , once slow and fast pointers meet send one of them to the start of the
         //list and keep the other at the meeting point then move both by one node untill they meet

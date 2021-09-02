@@ -68,6 +68,8 @@ void free_singly_linked_list(SinglyLinkedListNode* node) {
  * };
  *
  */
+// TimeComplexity = O(n)
+// SpaceComplexity = O(1)
 int findMergeNode(SinglyLinkedListNode* head1, SinglyLinkedListNode* head2) {
 
     SinglyLinkedListNode* h1=head1;

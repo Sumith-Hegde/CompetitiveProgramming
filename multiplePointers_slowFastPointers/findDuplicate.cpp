@@ -5,6 +5,8 @@ using namespace std;
 class Solution {
 public:
     //similar to finding cycle and start of cycle in linked list
+    // TimeComplexity = O(n)
+    // SpaceComplexity = O(1)
     int findDuplicate(vector<int>& nums) {
         int i=0;
         int j=0;

@@ -21,6 +21,7 @@ bool isLowerCase(char a)
     }
     return false;
 }
+//DP recursive(gave tle on hackerrank)
 // int abb(vector<vector<int>> dp,string a,int n,string b,int m)
 // {
 //     if(m==0)
@@ -41,24 +42,15 @@ bool isLowerCase(char a)
 //     }
 //     return 0;
 // }
+//DP iterative
+// TimeComplexity = O(len(a)*len(b))
+// SpaceComplexity = O(len(a)*len(b))
 string abbreviation(string a, string b) {
     int dp[a.length()+1][b.length()+1];
     memset(dp,0,sizeof(dp));
     for(int i=0;i<a.length()+1;i++)
     {
-        bool upper=false;
-    //    if(isLowerCase(a[i-1]))
-    //    {
-    //        dp[i][0]=1;
-    //    }
-        if(!upper)
-        {
             dp[i][0]=1;
-        }
-        else {
-            upper=true;
-            dp[i][0]=0;
-        }
     }
     for(int i=1;i<a.length()+1;i++)
     {

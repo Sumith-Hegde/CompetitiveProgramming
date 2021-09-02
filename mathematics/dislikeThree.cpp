@@ -14,6 +14,8 @@
 using namespace std;
 int main()
 {
+    // TimeComplexity = O(n)
+    // SpaceComplexity = O(n)
     int t=0;
     // vector<int> dislike3;
     map<int,int> dislike3;

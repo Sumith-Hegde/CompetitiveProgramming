@@ -7,6 +7,8 @@
 #include<iostream>
 #include<list>
 using namespace std;
+// TimeComplexity = O(n^2)
+// SpaceComplexity = O(n^2)
 char a[100][100]={'\0'};
 int m,n;
 list<pair<int,int>> Q;

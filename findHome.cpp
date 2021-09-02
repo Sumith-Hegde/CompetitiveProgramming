@@ -16,6 +16,13 @@
 // output->
 // index(0 based) of block that has minimum total distance to get all facilities
 
+
+//Google interview question
+// TimeComplexity = O(n)
+// SpaceComplexity = O(1)
+//go from left to right and get min total distance for each block to get essentials from left
+//go from right to left and get min total distance for each block to get essentials from right
+//among all choose min total distance
 #include<iostream>
 #include<vector>
 using namespace std;

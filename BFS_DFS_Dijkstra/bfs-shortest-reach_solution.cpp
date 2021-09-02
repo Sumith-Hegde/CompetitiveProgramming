@@ -6,7 +6,9 @@
 #include <iostream>
 #include <algorithm>
 using namespace std;
-
+//normal bfs
+//TimeComplexity = O(edges+nodes)
+//SpaceComplexity = O(nodes+edges)
 class Graph {
     public:
         vector<bool> visited;
@@ -15,10 +17,6 @@ class Graph {
         queue<int> Q;
         int n;
         Graph(int n) {
-            // vector<bool> temp(n+1,false);
-            // vector<int> temp2(n+1,-1);
-            // shortestDistance=temp2;
-            // visited=temp;
             for(int i=0;i<n;i++)
             {
                 visited.push_back(false);

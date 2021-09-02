@@ -21,6 +21,11 @@ int isValid(int a,int n)
     }
     return 1;
 }
+// TimeComplexity = O(n)
+// SpaceComplexity = O(n)
+//go from left to right to check min chocolate req considering only left neighbour
+//then go from right to left to check min chocolate req considering only right neighbours
+//choose max of both 
 long candies(int n, vector<int> arr) {
     long NoCandies=0;
     int candy[n];

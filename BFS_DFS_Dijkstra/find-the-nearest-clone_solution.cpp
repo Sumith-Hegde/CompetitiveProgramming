@@ -15,6 +15,10 @@ vector<string> split_string(string);
  *
  */
  
+
+ //modified BFS
+ // TimeComplexity = O(nodes+edges)
+// SpaceComplexity = O(nodes+edges)
  void BFS(int vertex,int value,vector<int> &shortDistance,map<int,vector<int>> &adj, vector<bool> &visited,queue<int> &Q,vector<long> &ids)
  {
      int current=Q.front();

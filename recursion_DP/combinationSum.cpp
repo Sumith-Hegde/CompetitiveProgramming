@@ -4,6 +4,10 @@
 using namespace std;
 class Solution {
 public:
+//recursion
+// TimeComplexity = O(n^2)
+// SpaceComplexity = O(n^2)
+//find all subsets/subsequences/combinations
     void findSumCombinations(vector<vector<int>> &combs,vector<int> &candidates,int i,int target,vector<int> &v)
     {
         if(i==candidates.size())

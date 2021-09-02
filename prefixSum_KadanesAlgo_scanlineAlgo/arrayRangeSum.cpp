@@ -5,6 +5,9 @@ using namespace std;
 class NumArray {
     vector<int> sum;
 public:
+//prefix sum
+// TimeComplexity = O(n)
+// SpaceComplexity = O(n)
     NumArray(vector<int>& nums) {
         // arr=nums;
         int s=0;
@@ -21,7 +24,7 @@ public:
             }
         }
     }
-    
+    //each query - O(1)
     int sumRange(int left, int right) {
         if(left==0) return sum[right];
         return sum[right]-sum[left-1];

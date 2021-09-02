@@ -12,6 +12,9 @@ string rtrim(const string &);
  * The function accepts INTEGER n as parameter.
  */
 int ways[100];
+//recursion/DP
+// TimeComplexity = O(n)
+// SpaceComplexity = O(n)
 int stepPerms(int n) {
     if(n==0||n==1)
     {

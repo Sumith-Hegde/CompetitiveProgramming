@@ -11,6 +11,8 @@ public:
         //1 => add 1
         //0 => add -1
         //use prefix sum to find max len of sub array with sum=0
+        // TimeComplexity = O(n)
+        // SpaceComplexity = O(n)
         for(int i=0;i<nums.size();i++)
         {
             if(nums[i]==0)

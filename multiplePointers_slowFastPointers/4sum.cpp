@@ -5,6 +5,8 @@ using namespace std;
 class Solution {
 public:
 //2 pointers + 2sum method
+// TimeComplexity = O(n^2)
+// SpaceComplexity = O(1)
     vector<vector<int>> fourSum(vector<int>& nums, int target) {
         vector<vector<int>> quads;
         if(nums.size()==0)

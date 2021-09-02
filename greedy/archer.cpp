@@ -17,6 +17,12 @@ int main()
 {
     int t=0;
     cin>>t;
+    //greedy
+    //TimeComplexity = O(n)
+    //SpaceComplexity = O(n)
+    //find freq of each number and if greater than given 'k' use first operation else use second
+    //i.e if freq greater than k use 1 move and kill all of that kind 
+    //then kill all the remaining(after first operation is checked for all values) using operation2 which takes (remaining/k)+1 moves
     while(t--)
     {
         int n,a;

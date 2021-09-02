@@ -7,6 +7,8 @@ public:
     vector<int> corpFlightBookings(vector<vector<int>>& bookings, int n) {
         vector<int> reserved(n,0);
         //scanline algorithm
+        // TimeComplexity = O(n)
+        // SpaceComplexity = O(n)
         for(auto i:bookings)
         {
             reserved[i[0]-1]+=i[2];

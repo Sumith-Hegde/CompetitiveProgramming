@@ -4,6 +4,10 @@
 using namespace std;
 class Solution {
 public:
+//greedy
+// TimeComplexity = O(n)
+// SpaceComplexity = O(1)
+//whenever price is greater than bought store max profit
     int maxProfit(vector<int>& prices) {
         int mini=prices[0];
         int maxProfit=0;

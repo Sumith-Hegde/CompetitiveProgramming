@@ -6,9 +6,11 @@ int countXor(vector<int> nums,int k)
     int xorr=0;
     int count=0;
     map<int,int> m;
-    //similar to kadane;s algorithm
+    //similar to kadane's algorithm
+    // TimeComplexity = O(n)
+    // SpaceComplexity = O(n)
     //suppose sub array has xor=a and if that has subArray with xor k, then b = xor^k
-    //therfore count this 'b' gives count of number of subArrays with xor=k
+    //therfore count of this 'b' gives count of number of subArrays with xor=k
     for(int i=0;i<nums.size();i++)
     {
         xorr=xorr^nums[i];

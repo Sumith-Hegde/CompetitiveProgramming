@@ -4,6 +4,8 @@
 using namespace std;
 class Solution {
 public:
+// TimeComplexity = O(log(k))
+// SpaceComplexity = O(1)
     double myPow(double x, int n) {
         double answer=1.0;
         long long a=n;
@@ -24,7 +26,7 @@ public:
                 a=a-1;
             }
         }
-        //if power was negative we need to retor 1/answer
+        //if power was negative we need to return 1/answer
         if(n<0) answer=(double)1.0/(double)answer;
         return answer;
     }

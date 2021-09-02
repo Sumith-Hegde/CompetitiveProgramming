@@ -1,5 +1,5 @@
 // add 2 numbers given in linked list form (leetcode)
-// Link to the problem - link_to_the_problem
+// Link to the problem - https://leetcode.com/problems/add-two-numbers/
 #include <bits/stdc++.h>
 using namespace std;
 struct ListNode {
@@ -12,6 +12,9 @@ struct ListNode {
 
 class Solution {
 public:
+//Linked List
+// TimeComplexity = O(n)
+// SpaceComplexity = O(1)
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
         ListNode* sum=new ListNode();
         ListNode* t1=l1;

@@ -9,6 +9,9 @@ struct ListNode {
       ListNode(int x) : val(x), next(nullptr) {}
       ListNode(int x, ListNode *next) : val(x), next(next) {}
   };
+    //slow fast pointers
+    // TimeComplexity = O(n)
+    // SpaceComplexity = O(1)
 class Solution {
 public:
     ListNode* middleNode(ListNode* head) {

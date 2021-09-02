@@ -4,6 +4,11 @@
 using namespace std;
 class Solution {
 public:
+//greedy
+// TimeComplexity = O(n)
+// SpaceComplexity = O(1)
+//wherever next day price is greater than todays price buy
+//if already bought wait untill you get max price and then sell
     int maxProfit(vector<int>& prices) {
         if(prices.size()==0||prices.size()==1)
         {

@@ -7,6 +7,8 @@ public:
     bool carPooling(vector<vector<int>>& trips, int capacity) {
         vector<int> passengers(1002,0);
         //scanline algo
+        // TimeComplexity = O(n)
+        // SpaceComplexity = O(n)
         for(auto i: trips)
         {
             //slight difference is insteadof adding to passengers[i[1]-1] we add to passengers[i[1]]

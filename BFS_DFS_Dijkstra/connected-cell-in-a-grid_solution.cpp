@@ -22,6 +22,10 @@ bool valid(int x,int y,vector<vector<int>> &grid)
     }
     return true;
 }
+//normal DFS on grid
+//count max number of connected nodes
+// TimeComplexity = O(n*m)
+// SpaceComplexity = O(n*m)
 int DFS(int x,int y,vector<vector<int>> &visited,vector<vector<int>> &grid)
 {
     int count=1;

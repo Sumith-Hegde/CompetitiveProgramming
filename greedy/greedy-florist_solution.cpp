@@ -6,7 +6,9 @@ vector<string> split_string(string);
 
 // Complete the getMinimumCost function below.
 int getMinimumCost(int k, vector<int> c) {
-
+//greedy
+// TimeComplexity = O(nlog(n))
+// SpaceComplexity = O(1)
     int minCost=0;
     sort(c.begin(),c.end());
     int i=c.size()-1;
