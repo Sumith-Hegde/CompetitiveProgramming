@@ -23,3 +23,4 @@ public:
         return pascalTriangle;
     }
 };
+//combinations formula can also be used

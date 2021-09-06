@@ -4,7 +4,7 @@
 using namespace std;
 class Solution {
 public:
-//DP
+//recursion
 //each step 2 choices - either add opening bracket or add closing bracket
     void parenthesis(vector<string> &ans,string s,int open,int close)
     {
