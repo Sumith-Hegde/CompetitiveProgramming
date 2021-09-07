@@ -1,3 +1,4 @@
+// problem link - https://codeforces.com/contest/1472/problem/C
 #include <bits/stdc++.h>
 using namespace std;
 int main()
@@ -8,24 +9,27 @@ int main()
     {
         int n=0;
         cin>>n;
-        vector<int> a;
+        vector<int> a(n);
+        vector<int> jumps(n,0);
         for(int i=0;i<n;i++)
         {
-            int x=0;
-            cin>>x;
-            a.push_back(x);
+            cin>>a[i];
         }
         int maxi=0;
-        for(int i=0;i<n;i++)
+        //DP
+        //from right store (current value+value after jumping) 
+        //max of these will be the answer
+        for(int i=n-1;i>=0;i--)
         {
-            int sum=0;
-            int j=i;
-            while(j<n)
+            jumps[i]=a[i];
+            if(i+a[i]<n)
             {
-                sum+=a[j];
-                j+=a[j];
+                jumps[i]+=jumps[i+a[i]];
             }
-            maxi=max(maxi,sum);
+        }
+        for(int i=0;i<jumps.size();i++)
+        {
+            maxi=max(maxi,jumps[i]);
         }
         cout<<maxi<<endl;
     }
