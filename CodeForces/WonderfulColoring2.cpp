@@ -27,6 +27,7 @@ int main()
             count+=i.second;
         }
         count=count-count%k;
+        // int z=1;
         for(int i=0;i<n;i++)
         {
             if(count>0)
@@ -34,6 +35,7 @@ int main()
                 if(m[a[i]]>0)
                 {
                     b[i]=m[a[i]];
+                    // z=(z+1)%k+1;
                     m[a[i]]--;
                     count--;
                 }
