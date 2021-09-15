@@ -8,36 +8,54 @@ int main()
     {
         int n=0,k=0;
         string s;
-        map<int,int> m;
+        // map<int,int> m;
         cin>>n;
         cin>>k;
         int count=0;
         vector<int> a(n);
         vector<int> b(n,0);
+        map<int,vector<int>> m;
         for(int i=0;i<n;i++)
         {
             cin>>a[i];
-            if(m[a[i]]<k)
+            m[a[i]].push_back(i);
+        }
+        int num=0;
+        for(auto i:m)
+        {
+            int l=i.second.size();
+            if(l<k)
             {
-                m[a[i]]++;
+                num+=l;
             }
         }
+        int x=k;
+        num=num-num%k;
         for(auto i: m)
         {
-            count+=i.second;
-        }
-        count=count-count%k;
-        // int z=1;
-        for(int i=0;i<n;i++)
-        {
-            if(count>0)
+            if(i.second.size()>=k)
             {
-                if(m[a[i]]>0)
+                int y=k;
+                for(auto j:i.second)
                 {
-                    b[i]=m[a[i]];
-                    // z=(z+1)%k+1;
-                    m[a[i]]--;
-                    count--;
+                    if(y==0)
+                    {
+                        break;
+                    }
+                    b[j]=y;
+                    y--;
+                }
+            }
+            else if(num>0)
+            {
+                for(auto j:i.second)
+                {
+                    if(x==0)
+                    {
+                        x=k;
+                    }
+                    b[j]=x;
+                    x--;
                 }
             }
         }
