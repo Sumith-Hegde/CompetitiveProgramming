@@ -62,17 +62,8 @@ using namespace std;
 
 int main()
 {
-	long long T, X, N;
-	for (cin >> T; T; --T)
-	{
-		cin >> X >> N;
-		long long T = N / 4 * 4;
-		while (++T <= N)
-			if (X % 2)
-				X += T;
-			else
-				X -= T;
-		cout << X << endl;
-	}
+	vector<int> a={50,40,30,30,30,20,10};
+	int i=upper_bound(a.end(),a.begin(),30)-a.begin();
+	cout<<i<<endl;
 	return 0;
 }

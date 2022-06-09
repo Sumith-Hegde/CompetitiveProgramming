@@ -8,11 +8,11 @@ int main()
     cin>>t;
     while(t--)
     {
-        double n=0;
+        long long n=0;
         int k=0;
         cin>>n>>k;
         long long ans=0;
-        double power=1;
+        long long power=1;
         while(k)
         {
             ans=(long long)(ans+(k&1)*power)%M;
